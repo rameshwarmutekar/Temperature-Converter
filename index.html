@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-image: url("Race Classification.jpg");
+      background-size: cover;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="input-group">
+      <input type="number" id="inputTemp" placeholder="Enter temperature">
+      <select id="inputUnit">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+    <div class="output-group">
+      <p>Converted Temperature:</p>
+      <p id="outputTemp"></p>
+    </div>
+    <button onclick="convertTemperature()">Convert</button>
+  </div>
+</body>
+</html>
